@@ -25,6 +25,10 @@ jobs:
           git checkout poc-release-sync
           git pull origin poc-release-sync
 
+      - name: Get Logs
+        run: |
+          git log
+
       - name: Rebase release branch onto main
         id: rebase
         run: |
